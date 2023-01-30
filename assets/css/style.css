@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    width:750px;
+    padding: 15px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(246,246,249,1) 0%, rgba(0,212,255,1) 53%);
+    margin: 50px auto;
+    
+}
+
+form{
+    width: 750px;
+    margin: 0 auto;
+    padding: 15px;
+    box-shadow: 10px 10px 12px 6px rgba(191,189,191,0.85);
+}
+
+input{
+    padding: 3px;
+}
+
+input[type="email"]{
+    width: 300px;
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin:30px 0 15px 50px;
+}
+
+.labelSobreInput{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+h3{
+    margin:15px 0 15px 0 ;
+    color: #98c9e7;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 20px;
+    background: #8ABCD5;
+    color: white;
+    border: none;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+    </head>
+    <body>
+        <header>
+            <h1>Paso 1: información persoal</h1>
+        </header>
+        <form action="https://wiki.8tags.es/classes/index.php">
+            <h3>Información persoal</h3>
+            <div class="flex">
+                <div class="labelSobreInput">
+                    <label for="apellidos">Apellidos*</label>
+                    <input name="apellidos" type="text" pattern="[Aa-Zz]" tabindex="1" required>
+                </div>
+                <div class="labelSobreInput">
+                    <label for="nombre">Nombre*</label>
+                    <input name="nombre" type="text" pattern="[Aa-Zz]" tabindex="2" required>
+                </div>
+            </div>
+            <div class="flex">
+                <div>
+                    <label for="sexo">Sexo</label>
+                    <br>
+                    <input type="radio" value="masculio" name="masculino" tabindex="3">
+                    <label for="masculio">Masculio</label>
+                    <input type="radio" value="femenio" name="femenio" tabindex="4">
+                    <label for="femenio">Femenino</label>
+                </div>
+                <div class="labelSobreInput">
+                    <label for="dni">Número de pasaporte , DNI o identificador personal*</label>
+                    <input type="text" name="dni" pattern="[0-9]{8}" patter="[A-Z]{1}" tabindex="5" required placeholder="12345687K">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="labelSobreInput">
+                    <label for="tel">Teléfono móvil personal*</label>
+                    <input type="tel" name="tel"  tabindex="6" required>
+                </div>
+                <div class="labelSobreInput">
+                    <label for="tel2">Otro teléfono</label>
+                    <input type="tel" name="tel2" tabindex="7">
+                </div>
+            </div>
+            <div class="labelSobreInput">
+                <label for="email">Dirección de correo electrónico</label>
+                <input type="email" name="email" tabindex="8" required placeholder="emailejemplo@gmail.com">
+            </div>
+            <h3>Dirección permaente</h3>
+            <div class="flex">
+                <div class="labelSobreInput">
+                    <label for="calle">Calle y número*</label>
+                    <input type="text" name="calle" pattern="[Aa-Zz]" pattern="[0-9]" tabindex="9" required>
+                </div>
+                <div class="labelSobreInput">
+                    <label for="apartamento">Número de apartamento / piso*</label>
+                    <input type="text" name="apartameto" id="apartameto" pattern="[0-9]{3}" tabindex="10" required>
+                </div>
+                </div>
+            <div class="flex">
+                <div class="labelSobreInput">
+                    <label for="pais">País*</label>
+                    <input type="text" name="pais" id="pais" pattern="[Aa-Zz]" tabindex="11" required>
+                </div>
+                <div class="labelSobreInput">
+                    <label for="estado">Estado / Provincia*</label>
+                    <input type="text" name="estado" id="estado" pattern="[Aa-Zz]" tabindex="12" required>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="labelSobreInput">
+                    <label for="ciudad">Ciudad / población</label>
+                    <input type="text" name="ciudad" pattern="[Aa-Zz]" tabindex="13" required>
+                </div>
+                <div class="labelSobreInput">
+                    <label for="cp">Codigo postal</label>
+                    <input type="text" name="cp" pattern="[0-9]" tabindex="14" id="cp">
+                </div>
+            </div>
+            <button tabindex="15">Guardar y contiuar 
+                <img src="./assets/img/check-solid.svg">
+            </button>
+            <button tabindex="15">Limpiar
+                <img src="./assets/img/check-solid.svg">
+            </button>
+        </form>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
